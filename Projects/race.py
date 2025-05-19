@@ -39,10 +39,10 @@ t4 = create_sprite("corgi",x4,y4)
 # # TODO - set how much each variable changes by and increase the number of repeats to at least 30
 # # TODO - explain here which sprites are faster or slower
 for i in range(30):
-	x1 += 10
-	x2 += random.randint(7,15)
-	x3 += 13
-	x4 += random.randint(3,20)
+	x1 += 10 #will not win
+	x2 += random.randint(7,15) #most stable could win
+	x3 += 13 #could win but unlikely
+	x4 += random.randint(3,20)#very random could win but also could loose
 	
 	t1.goto(x1, y1)
 	t2.goto(x2, y2)
